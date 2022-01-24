@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    let division = Division(code: "CCom-1")
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ForEach(0..<division.students.count, id: \.self) {i in
+            Text(division.students[i].forename + " " + division.students[i].surname)
+        }
     }
 }
 
