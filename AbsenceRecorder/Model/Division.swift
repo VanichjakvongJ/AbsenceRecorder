@@ -19,8 +19,9 @@ class Division {
     static func createDivision(code: String, of size: Int) -> Division {
         let division = Division(code: code)
         
-        for i in 0...10 {
-            division.students.append(Student.examples[i])
+        for i in 0...size {
+            let student = Student(forename: "Firstname\(i)", surname: "Surname\(i)", birthday: Date())
+            division.students.append(student)
         }
         
         return division

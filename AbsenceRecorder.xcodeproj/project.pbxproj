@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		436FACDF27A0A56C00A38286 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436FACDE27A0A56C00A38286 /* Date.swift */; };
+		436FACE127A0B60900A38286 /* DivisionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436FACE027A0B60900A38286 /* DivisionItem.swift */; };
 		43BF113E279F278D00C85039 /* AbsenceRecorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF113D279F278D00C85039 /* AbsenceRecorderApp.swift */; };
 		43BF1140279F278D00C85039 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF113F279F278D00C85039 /* ContentView.swift */; };
 		43BF1142279F278E00C85039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BF1141279F278E00C85039 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		436FACDE27A0A56C00A38286 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		436FACE027A0B60900A38286 /* DivisionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionItem.swift; sourceTree = "<group>"; };
 		43BF113A279F278D00C85039 /* AbsenceRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbsenceRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BF113D279F278D00C85039 /* AbsenceRecorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsenceRecorderApp.swift; sourceTree = "<group>"; };
 		43BF113F279F278D00C85039 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		436FACDD27A0A55600A38286 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				436FACDE27A0A56C00A38286 /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		43BF1131279F278D00C85039 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +110,7 @@
 		43BF113C279F278D00C85039 /* AbsenceRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				436FACDD27A0A55600A38286 /* Extensions */,
 				43BF1168279F29EA00C85039 /* View */,
 				43BF1167279F29E100C85039 /* Model */,
 				43BF113D279F278D00C85039 /* AbsenceRecorderApp.swift */,
@@ -145,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				43BF113F279F278D00C85039 /* ContentView.swift */,
+				436FACE027A0B60900A38286 /* DivisionItem.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -280,9 +294,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				43BF1140279F278D00C85039 /* ContentView.swift in Sources */,
+				436FACDF27A0A56C00A38286 /* Date.swift in Sources */,
 				43BF116A279F2A0A00C85039 /* Student.swift in Sources */,
 				43BF116C279F2A7700C85039 /* Division.swift in Sources */,
 				43BF113E279F278D00C85039 /* AbsenceRecorderApp.swift in Sources */,
+				436FACE127A0B60900A38286 /* DivisionItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
