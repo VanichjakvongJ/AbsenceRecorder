@@ -10,9 +10,36 @@ import Foundation
 class Division {
     let code: String
     var students: [Student] = []
+    var absences: [Absence] = []
     
     init(code: String) {
         self.code = code
+    }
+    
+    func getAbsence(for date: Date) -> Absence? {
+        return absences.first {
+            let comparison = Calendar.current.compare($0.takenOn, to: date, toGranularity: .day)
+            return comparison == .orderedSame
+        }
+    }
+    
+    func createAbsenceOrGetExistingIfAvailable(for date: Date) -> Absence {
+        
+        //if absence exists for the given date, return that date
+        for absence in absences {
+            if absence.takenOn == date {
+                return absence
+            }
+        }
+            
+        //otherwise, create new absence with date passed in, using current students
+        let newAbsence = Absence(date: date, students: students)
+        
+        //add to absences array
+        absences.append(newAbsence)
+            
+        //return absence
+        return newAbsence
     }
     
     #if DEBUG

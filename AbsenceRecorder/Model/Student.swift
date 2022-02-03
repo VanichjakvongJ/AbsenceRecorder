@@ -25,15 +25,15 @@ class Student {
         let student = Student(forename: forename, surname: surname, birthday: birthday)
         return student
     }
-    static let examples = [Student.createStudent(forename: "Orca", surname: "Vanichjakvong", birthday: Date(timeIntervalSince1970: 11221864800)),
-                           Student.createStudent(forename: "Sean", surname: "Okuyama-Smith", birthday: Date(timeIntervalSince1970: 11004559200)),
-                           Student.createStudent(forename: "Peter", surname: "Compton-Burnett", birthday: Date(timeIntervalSince1970: 11221864800)),
-                           Student.createStudent(forename: "James", surname: "Tcheng", birthday: Date(timeIntervalSince1970: 11004559200)),
-                           Student.createStudent(forename: "Ethan", surname: "Scott-Hin", birthday: Date(timeIntervalSince1970: 11004559200)),
-                           Student.createStudent(forename: "Barnaby", surname: "Wreford", birthday: Date(timeIntervalSince1970: 11004559200)),
-                           Student.createStudent(forename: "William", surname: "Tao", birthday: Date(timeIntervalSince1970: 11221864800)),
-                           Student.createStudent(forename: "Ahmed", surname: "Diab", birthday: Date(timeIntervalSince1970: 11004559200)),
-                           Student.createStudent(forename: "Nick", surname: "Stoian", birthday: Date(timeIntervalSince1970: 11004559200)),
-                           Student.createStudent(forename: "Aman", surname: "Gogna", birthday: Date(timeIntervalSince1970: 11004559200))]
+    static let examples = [Student(forename: "Orca", surname: "Vanichjakvong", birthday: Date(timeIntervalSince1970: 11221864800)),
+                           Student(forename: "Sean", surname: "Okuyama-Smith", birthday: Date(timeIntervalSince1970: 11004559200)),
+                           Student(forename: "Peter", surname: "Compton-Burnett", birthday: Date(timeIntervalSince1970: 11221864800)),
+                           Student(forename: "James", surname: "Tcheng", birthday: Date(timeIntervalSince1970: 11004559200)),
+                           Student(forename: "Ethan", surname: "Scott-Hin", birthday: Date(timeIntervalSince1970: 11004559200)),
+                           Student(forename: "Barnaby", surname: "Wreford", birthday: Date(timeIntervalSince1970: 11004559200)),
+                           Student(forename: "William", surname: "Tao", birthday: Date(timeIntervalSince1970: 11221864800)),
+                           Student(forename: "Ahmed", surname: "Diab", birthday: Date(timeIntervalSince1970: 11004559200)),
+                           Student(forename: "Nick", surname: "Stoian", birthday: Date(timeIntervalSince1970: 11004559200)),
+                           Student(forename: "Aman", surname: "Gogna", birthday: Date(timeIntervalSince1970: 11004559200))]
     #endif
 }
