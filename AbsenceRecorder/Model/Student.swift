@@ -7,9 +7,7 @@
 
 import Foundation
 
-class Student {
-    let formatter = DateFormatter()
-    
+class Student: Codable {
     let forename: String
     let surname: String
     let birthday: Date
